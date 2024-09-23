@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de stage de BTS</title>
+    <style>
+        table {
+            width: 90%;
+            height: 500px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #0054A6;
+            color: #fff;
+        }
+        .logo-cell {
+            width: 30%;
+        }
+        .text-cell {
+            width: 70%;
+        }
+        .header-row {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .action-link {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0054A6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body bgcolor="cyan">
+    <table>
+        <tr class="header-row">
+            <th colspan="2">Recherche de stage de BTS</th>
+        </tr>
+        <tr>
+            <th colspan="2">Période de stage : Du 2 juin au 4 Juillet 2025</th>
+        </tr>
+        <tr>
+            <td class="logo-cell">
+                <img src="LogoVilgenis.jpg" alt="Logo Lycée Parc de Vilgénis" width="100">
+                <h1>BTS</h1>
+            </td>
+            <td class="text-cell">
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>●Contacter une entreprise</li>
+                    <li>●Remplir la feuille d'engagement (à télécharger de l'ENT)</li>
+                    <li>●Signature du responsable Entreprise</li>
+                    <li>●Signature du tuteur (Votre prof)</li>
+                    <li>●Délivrance convention de stage</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<form action="#" method="post">
+        <h2>Formulaire d'inscription</h2>
+    
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+    
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+    
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" required><br><br>
+    
+        <label for="adresse">Adresse postale :</label>
+        <input type="text" id="adresse" name="adresse" required><br><br>
+    
+        <label>Classe :</label><br>
+        <input type="radio" id="classe3" name="classe" value="3ème">
+        <label for="classe3">3ème</label><br>
+    
+        <input type="radio" id="bts1" name="classe" value="BTS 1">
+        <label for="bts1">BTS 1</label><br>
+    
+        <input type="radio" id="bts2" name="classe" value="BTS 2">
+        <label for="bts2">BTS 2</label><br>
+    
+        <input type="radio" id="l3" name="classe" value="L3">
+        <label for="l3">L3</label><br><br>
+    
+        <input type="submit" value="Soumettre">
+    </form>
