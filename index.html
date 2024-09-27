@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sommaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ff4d4d; /* Fond rouge */
+            color: #fff; /* Texte en blanc */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #fff; /* Couleur du titre */
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour la nav */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style: none; /* Supprime les puces de la liste */
+            padding: 0;
+        }
+        li {
+            margin: 10px 0; /* Espace entre les éléments de la liste */
+        }
+        a {
+            text-decoration: none;
+            color: #ff4d4d; /* Couleur des liens */
+            font-weight: bold;
+        }
+        a:hover {
+            color: #d32f2f; /* Couleur des liens au survol */
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Sommaire</h1>
-
-    <a href="mission 1/index.html">Mission 1</a><br>
-    <a href="TP1/index (1).html">TP1</a><br>
-    <a href="TP2/index.html">TP2</a><br>
-    <a href="mission 2/index.html">Mission 2</a> <br>
-    <a href="tp3/formulaire1.html">TP3</a>
-
-
+    <nav>
+        <ul>
+            <li><a href="mission 1/index.html">Mission 1</a></li>
+            <li><a href="TP1/index (1).html">TP1</a></li>
+            <li><a href="TP2/index.html">TP2</a></li>
+            <li><a href="mission 2/index.html">Mission 2</a></li>
+            <li><a href="tp3/formulaire1.html">TP3</a></li>
+            <li><a href="mission 3/mission3.html">Mission 3</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
