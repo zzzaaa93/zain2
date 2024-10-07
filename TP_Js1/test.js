@@ -53,7 +53,7 @@ function affichage(){
         document.write("Voici la somme des notes : " + somme + "<br>");
         document.write("Voici la moyenne : " + moyenne + "<br>");
     
-        if (moyenne >= 10 && moyenne <= 14) {
+        if (moyenne >= 10 && moyenne <= 20) {
             document.write("Admis<br>");
             document.body.style.backgroundColor = "green";
         } else if (moyenne < 10) {
@@ -62,7 +62,7 @@ function affichage(){
         } else {
             document.write("Moyenne invalide<br>");
         }
-        if (moyenne>14 && moyenne <= 20))
+        if (moyenne>14 )
         document.write("Admis bien<br>");
         document.body.style.backgroundColor = "#01f308";
     }
