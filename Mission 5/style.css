@@ -1,0 +1,125 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+nav.squelette label, input[type="checkbox"] {
+    display: none;
+}
+
+nav.squelette > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #4a4a63;
+    padding: 0;
+}
+
+nav.squelette > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: bold;
+    border-top: 5px solid transparent;
+    transition: all 0.3s;
+}
+
+nav.squelette > ul > li > a:hover {
+    background-color: #393952;
+    border-top: 5px solid #00ff00;
+}
+
+nav.squelette ul ul {
+    display: none;
+    position: absolute;
+    background-color: #e0fff4;
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1000;
+    width: 200px;
+}
+
+nav.squelette ul li:hover > ul {
+    display: block;
+}
+
+nav.squelette ul ul li {
+    width: 100%;
+}
+
+nav.squelette ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+
+nav.squelette ul ul li:nth-child(1) a {
+    background-color: #90EE90;
+}
+
+nav.squelette ul ul li:nth-child(2) a {
+    background-color: #90EE90;
+}
+
+nav.squelette ul ul li:nth-child(3) a {
+    background-color: #90EE90;
+}
+
+nav.squelette ul ul li:nth-child(4) a {
+    background-color: #90EE90;
+}
+
+nav.squelette ul ul li:nth-child(5) a {
+    background-color: #90EE90;
+}
+
+nav.squelette ul ul li a:hover {
+    background-color: #00ff00;
+}
+
+nav.squelette ul li {
+    position: relative;
+}
+
+nav.squelette > ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 680px) {
+    nav.squelette label {
+        display: block;
+        background-color: #00a676;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    nav.squelette ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    nav.squelette ul li {
+        width: 100%;
+    }
+
+    nav.squelette ul ul {
+        position: relative;
+        width: 100%;
+    }
+
+    nav.squelette ul ul li a {
+        width: 100%;
+        padding: 15px;
+    }
+}
