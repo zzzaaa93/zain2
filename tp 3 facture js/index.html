@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="facture.js"></script>
+    <link rel="stylesheet" type="text/css" href="facture.css">
+    <title>Facture en JavaScript</title>
+</head>
+<body>
+    <center>
+        <h1>Facture en JavaScript</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Article</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Résultat</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="article1" value="Article 1"></td>
+                    <td><input type="number" id="prix1" value="0"></td>
+                    <td><input type="number" id="quantite1" value="1"></td>
+                    <td><input type="text" id="resultat1" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="article2" value="Article 2"></td>
+                    <td><input type="number" id="prix2" value="0"></td>
+                    <td><input type="number" id="quantite2" value="1"></td>
+                    <td><input type="text" id="resultat2" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="article3" value="Article3"></td>
+                    <td><input type="number" id="prix3" value="0"></td>
+                    <td><input type="number" id="quantite3" value="1"></td>
+                    <td><input type="text" id="resultat3" readonly></td>
+                </tr>
+                <tr>
+                        <td><input type="text" id="article2" value="Article 4"></td>
+                        <td><input type="number" id="prix2" value="0"></td>
+                        <td><input type="number" id="quantite2" value="1"></td>
+                        <td><input type="text" id="resultat2" readonly></td>
+                    </tr>
+                    <tr>
+                            <td><input type="text" id="article2" value="Article 5"></td>
+                            <td><input type="number" id="prix2" value="0"></td>
+                            <td><input type="number" id="quantite2" value="1"></td>
+                            <td><input type="text" id="resultat2" readonly></td>
+                        </tr>
+                        <tr>
+                                <td><input type="text" id="article2" value="Article 6"></td>
+                                <td><input type="number" id="prix2" value="0"></td>
+                                <td><input type="number" id="quantite2" value="1"></td>
+                                <td><input type="text" id="resultat2" readonly></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="text" id="article2" value="Article 7"></td>
+                                    <td><input type="number" id="prix2" value="0"></td>
+                                    <td><input type="number" id="quantite2" value="1"></td>
+                                    <td><input type="text" id="resultat2" readonly></td>
+                                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="reinitialiser()">Réinitialiser</button></td>
+                    <td><button onclick="calculer()">Résultat</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td><input type="text" id="total" readonly></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+</body>
+</html>
