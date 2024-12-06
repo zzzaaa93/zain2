@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Module de Facturation</h1>
+    <section>
+        <button onclick="affichagetab()">Afficher Tableau Simple</button>
+        <button onclick="affichagetab2()">Afficher Tableau Personnalisé</button>
+        <button onclick="cdc()">Analyser une Chaîne</button>
+        <button onclick="seconecter()">Se Connecter</button>
+        <button onclick="seconecter3()">Se Connecter avec Tentatives</button>
+    </section>
+
+    <section>
+        <h2>Ajout de lignes dans un tableau</h2>
+        <form>
+            <input type="text" id="t1" placeholder="Nom">
+            <input type="number" id="t2" placeholder="Âge">
+            <button type="button" onclick="ajouterLigne()">Ajouter Ligne</button>
+        </form>
+        <table id="myTable" border="1">
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
